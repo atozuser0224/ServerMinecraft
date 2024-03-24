@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: ServerMinecraft
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://109.199.111.137:3306/jpadata
+    username: server
+    password: abcd1234*
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    database: mysql
+server:
+  address: localhost
+  port: 8080
